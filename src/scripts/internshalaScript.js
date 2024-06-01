@@ -12,7 +12,7 @@ async function fetchAuto(userData, inputURL){
         const [page] = await browser.pages();
         page.setDefaultTimeout(0)
         
-        await page.goto('https://internshala.com/internships/node-js-development-internship/stipend-6000/')
+        await page.goto(inputURL)
         await page.waitForNetworkIdle();
 
         const url = page.url();
